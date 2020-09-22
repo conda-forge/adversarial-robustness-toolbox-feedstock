@@ -33,6 +33,7 @@ requirements:
     - six
     - statsmodels
     - tqdm
+    - tensorflow
 
 test:
   imports:
