@@ -40,6 +40,7 @@ Installing `adversarial-robustness-toolbox` from the `conda-forge` channel can b
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `adversarial-robustness-toolbox` can be installed with:
