@@ -1,5 +1,5 @@
 {% set name = "adversarial-robustness-toolbox" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b38e75a015c339983730e8c33528244db4a92a3ab9ed59412f26f500fc47abdc
+  sha256: 28fcd4f555c3e41c9b63a9d939dcbb902d7f4d739ddd99828b701b15a8f97903
 
 build:
   number: 0
