@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - cma
     - ffmpeg-python
@@ -26,7 +26,7 @@ requirements:
     - pillow
     - pydub
     - kornia
-    - python
+    - python >=3.6
     - resampy
     - scikit-learn ==0.22.1
     - scipy ==1.4.1
@@ -97,4 +97,3 @@ extra:
     - mxr-conda
     - rluria14
     - oblute
-    - ndmaxar
