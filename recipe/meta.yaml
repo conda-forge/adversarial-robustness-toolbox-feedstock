@@ -1,13 +1,14 @@
 {% set name = "adversarial-robustness-toolbox" %}
-{% set version = "1.7.2" %}
+{% set version = "1.9.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5792c95c2e033bc6323c9b92f45f8b2b8f1e979bfbc697a97253b5b908e3280
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/adversarial-robustness-toolbox-{{ version }}.tar.gz
+  sha256: 67421b206c8b4497a69268b70d3117acf70cacc5d8553b5282b5f845d2876003
 
 build:
   number: 0
@@ -19,69 +20,23 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - cma
-    - ffmpeg-python
-    - matplotlib-base
-    - mypy
-    - pillow
-    - pydub
-    - kornia
+    - numba >=0.53.1
+    - numpy >=1.18.0
     - python >=3.6
-    - resampy
-    - scikit-learn ==0.22.1
-    - scipy ==1.4.1
+    - scikit-learn >=0.22.2,<1.1.0
+    - scipy >=1.4.1
+    - setuptools
     - six
-    - statsmodels
     - tqdm
-    - tensorflow
 
 test:
   imports:
     - art
     - art.attacks
-    - art.attacks.evasion
-    - art.attacks.evasion.adversarial_patch
-    - art.attacks.evasion.projected_gradient_descent
-    - art.attacks.extraction
-    - art.attacks.inference
-    - art.attacks.poisoning
-    - art.attacks.poisoning.perturbations
-    - art.classifiers
-    - art.classifiers.scikitlearn
-    - art.defences
-    - art.defences.detector
-    - art.defences.detector.evasion
-    - art.defences.detector.evasion.subsetscanning
-    - art.defences.detector.poison
-    - art.defences.postprocessor
-    - art.defences.preprocessor
-    - art.defences.trainer
-    - art.defences.transformer
-    - art.estimators
-    - art.estimators.certification
-    - art.estimators.certification.randomized_smoothing
-    - art.estimators.classification
-    - art.estimators.encoding
-    - art.estimators.generation
-    - art.estimators.object_detection
-    - art.estimators.regression
-    - art.metrics
-    - art.wrappers
-    - tests
-    - tests.attacks
-    - tests.attacks.evasion
-    - tests.attacks.inference
-    - tests.classifiersFrameworks
-    - tests.defences
-    - tests.defences.detector
-    - tests.defences.detector.evasion
-    - tests.defences.detector.evasion.subsetscanning
-    - tests.defences.detector.poison
-    - tests.estimators
-    - tests.estimators.certification
-    - tests.estimators.classification
-    - tests.metrics
-    - tests.wrappers
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Trusted-AI/adversarial-robustness-toolbox
@@ -95,5 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - rluria14
-    - oblute
