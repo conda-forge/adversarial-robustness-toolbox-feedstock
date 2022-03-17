@@ -5,7 +5,7 @@ Home: https://github.com/Trusted-AI/adversarial-robustness-toolbox
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/adversarial-robustness-toolbox-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/adversarial-robustness-toolbox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Toolbox for adversarial machine learning.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10331&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/adversarial-robustness-toolbox-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10331&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/adversarial-robustness-toolbox-feedstock?branchName=main">
       </a>
     </td>
   </tr>
