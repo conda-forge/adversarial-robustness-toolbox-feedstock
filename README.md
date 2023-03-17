@@ -1,11 +1,11 @@
-About adversarial-robustness-toolbox
-====================================
+About adversarial-robustness-toolbox-feedstock
+==============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/adversarial-robustness-toolbox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Trusted-AI/adversarial-robustness-toolbox
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/adversarial-robustness-toolbox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Toolbox for adversarial machine learning.
 
