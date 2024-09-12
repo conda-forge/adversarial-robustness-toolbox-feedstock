@@ -11,21 +11,21 @@ source:
   sha256: f5f5217d13b5a2946b39ac84ef7a34de5a4266b923253264e0846be2a83a33e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
     - matplotlib-base
     - numba >=0.53.1
     - numpy >=1.18.0
-    - python >=3.6
+    - python >=3.9
     - pillow
-    - scikit-learn >=0.22.2,<1.1.0
+    - scikit-learn >=0.22.2
     - scipy >=1.4.1
     - setuptools
     - six
