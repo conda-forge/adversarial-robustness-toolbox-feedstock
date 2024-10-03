@@ -147,5 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jxn11](https://github.com/jxn11/)
+* [@lockwoodar](https://github.com/lockwoodar/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 
