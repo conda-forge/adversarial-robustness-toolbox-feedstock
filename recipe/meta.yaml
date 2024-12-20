@@ -36,6 +36,9 @@ test:
   commands:
     - pip check
   requires:
+    - matplotlib-base
+    - numba >=0.53.1
+    - pillow
     - pip
 
 about:
