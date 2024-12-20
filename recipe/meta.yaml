@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - matplotlib-base
     - numba >=0.53.1
