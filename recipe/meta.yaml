@@ -11,18 +11,18 @@ source:
   sha256: 28ac14b419afc9f85032d603eafc772802565002eea21d34f2474ae12f70a949
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
     - numpy >=1.18.0
-    - python >=3.9    
+    - python >={{ python_min }}
     - scikit-learn >=0.22.2
     - scipy >=1.4.1
     - setuptools
@@ -40,6 +40,7 @@ test:
     - numba >=0.53.1
     - pillow
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Trusted-AI/adversarial-robustness-toolbox
