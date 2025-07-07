@@ -151,6 +151,3 @@ Feedstock Maintainers
 * [@lockwoodar](https://github.com/lockwoodar/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 
-
-<!-- dummy commit to enable rerendering -->
-
