@@ -53,6 +53,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - heart-library
     - jxn11
     - lockwoodar
     - mxr-conda
